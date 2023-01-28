@@ -1,0 +1,39 @@
+.secao-horizontal .cartao {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+
+  column-gap: 1.25rem;
+}
+
+.secao-horizontal .cartao__imagem {
+  grid-column: 1/2;
+  grid-row: 1/4;
+/* 
+  sintaxe maior ainda
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4; */
+}
+
+.secao-horizontal .cartao__titulo {
+  grid-area: 1/2/2/3;
+  align-self: center;
+}
+
+.secao-horizontal .cartao__player {
+  /* Sintaxe enxuta */
+  grid-area: 3/2/4/3;
+}
+
+.secao-horizontal .cartao__botao {
+  /* Sintaxe detalhada */
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+
+.secao-vertical .cartao {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+ 
